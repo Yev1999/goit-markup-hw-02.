@@ -1,190 +1,237 @@
+:root {
+    --main-title-color: #FFFFFF;
+    --second-title-color: #212121;
+    --main-text-color: #757575;
+    --second-text-color: color: rgba(255, 255, 255, 0.6);
+    --colored-text: #2196F3;
+    --hover-text: #2196F3;
+    --main-btn-color: #FFFFFF;
+    --second-btn-color: #757575;
+    --btn-text-color: #212121;
+    --section-servicec-fon: #2F303A;
+    --section-work-fon: #E5E5E5;
+    --section-our-fon: #E5E5E5;
+    --section-team-fon: #F5F4FA;
+    --footer-fon: #2F303A;
+    --button-text-color: #F5F4FA;
+}
 
 body {
-    font-family: Roboto;
-    font-style: normal;
-    color: #757575;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    font-family: 'roboto';
+    color: var(--main-text-color)
 }
 
-/*WebStudio color*/
+.head {
+    font-family: 'roboto';
+}
+.list {
+    list-style: none;
+}
 
-.web {
-    color: #212121;
+.link {
+    text-decoration: none;
+}
+
+/*---------------HEADER---------------*/
+
+.heder-logo {
     font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 31px;
-/* identical to box height */
-
-letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    letter-spacing: 0.03em;
+    color: var(--colored-text);
 }
 
-.web > .href {
-    font-family: Raleway;
-}
-
-.web :hover,
-.web :focus {
-    color: #2196F3 
-}
-
-.efect {
-    background-color: #2F303A;
-}
-
-.text-h1 {
-    color: #ffffff;
-    font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-/* or 136% */
-
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-}
-
-.sector-nav a {
-    color: #212121;
-}
-.sector-aut a {
-    color: #212121;
-}
-
-.sector-nav :hover,
-.sector-nav :focus {
-    color: #2196F3;
-}
-
-.sector-aut :hover,
-.sector-aut :focus {
-    color: #2196F3;
-}
-
-.section-title {
-    color: #212121;
-    text-transform: uppercase;
-    font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-}
-
-.section-title-plus {
-    font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-}
-
-.section-title-name {
-    
-    font-family: Roboto;
-    font-style: normal;
+.header-link {
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--hover-text);
+}
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--hover-text);
+}
+
+/*---------------section-services---------------*/
+
+
+.section-services {
+    background: var(--section-servicec-fon)
+}
+.section-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.section-btn {
+    font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-btn-color);
+}
+
+.section-btn {
+background: var(--hover-text);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.section-btn {
+    cursor: pointer;
+}
+
+/*---------------section-work ---------------*/
+
+
+.section-work {
+    background: var(--section-work-fon)
+}
+.section-work-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+.section-work-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+/*---------------section-our-work ---------------*/
+
+.section-ourwork {
+    background: var(--section-our-fon);
+}
+.section-ourwork-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    
-    color: #212121; 
+    color: var(--second-title-color);
 }
 
-.section-title-work {
-    font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+/*---------------section-team ---------------*/
 
-text-align: center;
-letter-spacing: 0.03em;
+.section-team {
+    background: var(--section-team-fon);
 }
-.text-p {
-    font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
-letter-spacing: 0.03em;
+.section-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color)
 }
-
-/* Footer bg */
-
-footer {
-    background: #2F303A;
-}
-
-.footer-bg {
-    color: #ffffff;
-}
-
-.footer-bg-a {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.webfooter {
-    color: #ffffff;
-}
-
-.webfooter :hover,
-.webfooter :focus {
-    color: #2196F3;
-}
-
-.webfooter-color {
-    color: #ffffff;
-}
-
-/* button*/
-button {
-    color: #ffffff;
-    background-color: #2196F3;
-    font-weight: bold;
-font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 187% */
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-}
-
-.section-title-buton {
+.section-team-name {
     font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-/* identical to box height, or 162% */
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+.section-team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
 
-text-align: center;
-letter-spacing: 0.03em;
+/*---------------footer ---------------*/
+
+
+.footer {
+background: var(--footer-fon);
+}
+
+.footer-map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+.footer-communication {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+.footer-map:hover,
+.footer-map:focus {
+    color: var(--hover-text);
+}
+
+.footer-communication:hover,
+.footer-communication:focus {
+    color: var(--hover-text);
+}
+
+/*---------------section-portfolio---------------*/
+
+.section-buton {
+    background: var(--section-our-fon);
+}
+
+.section-buton-btn {
+    background: var(--button-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.section-buton-btn:hover,
+.section-buton-btn:focus {
+    background: var(--hover-text)
+}
+
+.section-buton-btn {
+    cursor: pointer;
+}
+
+/*---------------section-portfolio---------------*/
+
+.section-portfolio {
+    background: var(--section-work-fon);
 }
 
 .section-title-portfolio {
     font-weight: bold;
 font-size: 18px;
 line-height: 36px;
-/* identical to box height, or 200% */
-
 letter-spacing: 0.06em;
 color: #212121;
-}
-
-.section-title-portfolio-name {
-    font-weight: normal;
-font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 187% */
-
-letter-spacing: 0.03em;
-
-color: #757575;
 }
