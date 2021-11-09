@@ -32,6 +32,12 @@ body {
     text-decoration: none;
 }
 
+/*---------------Logotipe---------------*/
+
+.studio-nav {
+    color: var(--second-title-color);
+}
+
 /*---------------HEADER---------------*/
 
 .heder-logo {
@@ -52,7 +58,8 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link:active {
     color: var(--hover-text);
 }
 .header-tel {
